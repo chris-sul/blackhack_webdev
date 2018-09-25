@@ -66,6 +66,19 @@ ___
 </html>
 ```
 
+```
+<!-- index.html-->
+
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block body %}
+<div class="jumbotron">
+  <h1>Flask Is Awesome</h1>
+  <p class="lead">Replace me!</p>
+</div>
+{% endblock %}
+```
+
 ___
 
 ## Documentation
