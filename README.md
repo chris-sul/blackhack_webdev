@@ -21,7 +21,7 @@ To check if you have pip run the following command in your terminal:
 pip --version
  ```
  If it's not installed you can follow the instruction [here](https://pip.pypa.io/en/stable/installing/).
- 
+
  #### Installing Virtualenv
  The last thing we want to install is virtualenv. Virtualenv allows you to install python packages in isolated environments versus through your whole system.
  To check if you have virtualenv run the following command in your terminal:
@@ -29,7 +29,43 @@ pip --version
 virtualenv --version
  ```
  If it's not installed you can follow the instructions [here](https://virtualenv.pypa.io/en/stable/installation/).
- 
+
+___
+
+## Base Template Code
+
+```
+<!-- base.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{% block title %}{% endblock %}</title>
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="https://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation"><a href="/">Home</a></li>
+            <li role="presentation"><a href="/about">About</a></li>
+          </ul>
+        </nav>
+      </div>
+      {% block body %}
+      {% endblock %}
+      <footer class="footer">
+        <p>© 2018 Your Name Here</p>
+      </footer>
+    </div> <!-- /container -->
+  </body>
+</html>
+```
+
 ___
 
 ## Documentation
