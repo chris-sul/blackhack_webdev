@@ -2,7 +2,7 @@
 
 BlackHack Tutorial on Web Application Development using Flask!
 ___
-## Before You Come
+## Installing Requirements
 
 #### Getting a Terminal
 You are going to need a terminal to use during this tutorial for running your web app. If you are using mac or linux you should already have a terminal installed on your computer. If running Windows I would recommend either [Git Bash](https://git-scm.com/downloads) or installing [Ubuntu for Windows](https://tutorials.ubuntu.com/tutorial/tutorial-ubuntu-on-windows#0).
